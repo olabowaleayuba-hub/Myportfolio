@@ -50,7 +50,7 @@ header {
 .nav-links {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 0.5rem
+  gap: 0.5rem 1rem;
   padding: 0;
   list-style: none;
   font-size: 0.9rem;
