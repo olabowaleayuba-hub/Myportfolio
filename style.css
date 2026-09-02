@@ -1,9 +1,13 @@
-* {
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html, body {
+  width:100%;
+  overflow-x: hidden;
+}
 html {
   scroll-behavior: smooth;
   font-family:
@@ -213,12 +217,33 @@ header {
 
 @media (max-width: 768px) {
   .hero-section {
+    display: flex;
     flex-direction: column-reverse;
     text-align: center;
   }
 
+  .navbar {
+    width: 100%;
+    padding: 1rem;
+  }
+  
   .nav-links {
-    gap: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 1rem;
     font-size: 0.9rem;
   }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+}
 }
